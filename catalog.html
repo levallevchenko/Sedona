@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>HTML Academy: Гостиницы Седоны</title>
@@ -8,12 +8,12 @@
 	<header class="main-header">
   		<nav class="main-navigation">
   			<a class="main-header-logo" href="index.html">
-         		 <img src="img/index-logo.svg" width="67px" height="56px" alt="Логотип сайта Седона"></a>
+         		 <img src="img/index-logo.svg" width="67" height="56" alt="Логотип сайта Седона"></a>
   			<ul class="site-navigation">
   				<li><a href="info.html">Информация</a></a></li>
   				<li><a href="photo.html">Фото и Видео</a></li>
   				<li><a href="map.html">Карта Штата</a></li>
-  				<li><a href="hotels.html">Гостиницы</a></li>
+  				<li class="site-navigation-current"><a href="catalog.html">Гостиницы</a></li>
   			</ul>
   		</nav>
   	</header>
@@ -24,38 +24,25 @@
   			<h3>Инфроструктура</h3>
   	    	<ul class="selection-list">
 	  	    	<li class="selection-item">
-	  	    		<lable>
-	  	    			<input type="checkbox" checked>Бассейн
-	  	    		</lable> 
+	  	    		<label><input type="checkbox" checked>Бассейн</label> 
 	  	    	</li>
 	  	    	<li class="selection-item">
-	  	    		<lable>
-	  	    			<input type="checkbox">Парковка
-	  	    		</lable>
+	  	    		<label><input type="checkbox">Парковка</label>
 	  	    	</li>
 	  	    	<li class="selection-item">
-	  	    		<lable>
-	  	    			<input type="checkbox">Wi-Fi
-	  	    		</lable>
-
+	  	    		<label><input type="checkbox">Wi-Fi</label>
 	  	    	</li>
 	  	    </ul>
 	  	    <h3>Тип жилья</h3>
 	  	    <ul class="selection-list">
 	  	    	<li class="selection-item">
-	  	    		<lable>
-	  	    			<input type="checkbox" checked>Гостиница
-	  	    		</label> 
+	  	    		<label><input type="checkbox" checked>Гостиница</label> 
 	  	    	</li>
 	  	    	<li class="selection-item">
-	  	    		<lable>
-	  	    			<input type="checkbox" checked>Мотель
-	  	    		</label> 
+	  	    		<label><input type="checkbox" checked>Мотель</label> 
 	  	    	</li>
 	  	    	<li class="selection-item">
-	  	    		<lable>
-	  	    			<input type="checkbox" checked>Апартаменты
-	  	    		</label> 
+	  	    		<label><input type="checkbox" checked>Апартаменты</label> 
 	  	    	</li>
 	  	    </ul>
 	  	    <h3>Стоимость в сутки(Р):</h3>
@@ -63,26 +50,19 @@
 	  	    	<li class="selection-item">от 0</li>
 	  	    	<li class="selection-item">до 3000</li>
 	  	    </ul>
-	  	    <input type="submit" value="Показать">
+	  	    <button>Показать</button>
 	  	    <section class="sortation">
 	  	    	<h2>Найдено 3</h2>
 	  	    	<h3>Сортировка</h3>
 	  	    	<ul class="sortation-list">
 	  	    	<li class="sortation-item">
-	  	    		<lable>
-	  	    			<input type="checkbox" checked>По цене
-	  	    		</lable> 
+	  	    		<label><input type="checkbox" checked>По цене</label> 
 	  	    	</li>
 	  	    	<li class="sortation-item">
-	  	    		<lable>
-	  	    			<input type="checkbox">По типу
-	  	    		</lable>
+	  	    		<label><input type="checkbox">По типу</label>
 	  	    	</li>
 	  	    	<li class="sortation-item">
-	  	    		<lable>
-	  	    			<input type="checkbox">По рейтингу
-	  	    		</lable>
-
+	  	    		<label><input type="checkbox">По рейтингу</label>
 	  	    	</li>
 	  	    </ul>
 
@@ -143,13 +123,15 @@
 	<footer class="main-footer">
   		<b>#VisitSedona</b>
   		<ul class="social">
-  			<li class="social-tw"></li>
-  			<li class="social-fb"></li>
-  			<li class="social-vk"></li>
+  			<li class="social-tw"><a href="https://twitter.com/">TW</a></li>
+  			<li class="social-fb"><a href="https://www.facebook.com/">FB</a></li>
+  			<li class="social-yt"><a href="https://www.youtube.com/">YT</a></li>
   		</ul>
 		<b>WebSite By</b>
-  		<a class="logo-html" href="https://htmlacademy.ru">html
+  		<a class="logo-html" href="https://htmlacademy.ru/intensive/htmlcss">html
   		academy</a>
   	</footer>
 </body>
-</html>
+</html>		
+	  	    		
+	  	    	

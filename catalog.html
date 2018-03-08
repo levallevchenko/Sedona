@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>HTML Academy: Гостиницы Седоны</title>
+	<title>Гостиницы Седоны</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header class="main-header">
@@ -12,9 +13,9 @@
             </a>
   			<ul class="site-navigation">
   				<li><a href="info.html">Информация</a></li>
-  				<li><a href="photo.html">Фото и Видео</a></li>
-  				<li><a href="map.html">Карта Штата</a></li>
-  				<li class="site-navigation-current"><a href="catalog.html">Гостиницы</a></li>
+  				<li><a href="photo.html">Фото и видео</a></li>
+  				<li><a href="map.html">Карта штата</a></li>
+  				<li class="site-navigation-current"><a>Гостиницы</a></li>
   			</ul>
   		</nav>
   	</header>
@@ -51,25 +52,25 @@
 	  	    	<li class="selection-item">от 0</li>
 	  	    	<li class="selection-item">до 3000</li>
 	  	    </ul>
-	  	    <button>Показать</button>
+	  	    <a class="button">Показать</a>
 	  	    </section>
 	  	    <section class="sortation">
 	  	    	<h2>Найдено 3</h2>
 	  	    	<h3>Сортировка</h3>
 	  	    	<ul class="sortation-list">
     	  	    	<li class="sortation-item">
-    	  	    		<label><input type="checkbox" checked>По цене</label> 
+    	  	    		<a href="#">По цене</a>
     	  	    	</li>
     	  	    	<li class="sortation-item">
-    	  	    		<label><input type="checkbox">По типу</label>
+    	                <a href="#">По типу</a>
     	  	    	</li>
     	  	    	<li class="sortation-item">
-    	  	    		<label><input type="checkbox">По рейтингу</label>
+    	                <a href="#">По рейтингу</a>
     	  	    	</li>
 	  	        </ul>
                 <ul class="arrows">
-                    <li class="arrow-up"></li>
-                    <li class="arrow-down"></li>
+                    <li class="arrow-up"><a href="#"></a></li>
+                    <li class="arrow-down"><a href="#"></a></li>
                 </ul>
 	  	    </section>
   	    <section class="catalog">
@@ -97,8 +98,8 @@
                         <li class="star"></li>
                         <li class="star"></li>
                         <li class="star"></li>
-                     </ul>
-                     <span class="rating">Рейтинг 8,5</span>
+                    </ul>
+                    <span class="rating">Рейтинг 8,5</span>
   	     		</li>
   	     		<li class="catalog-item">
   	     		    <h3>
@@ -153,16 +154,13 @@
     <footer class="main-footer">
         <b>#VisitSedona</b>
         <ul class="social">
-            <li class="social-tw"><a href="https://twitter.com/">TW</a></li>               
-            <li class="social-fb"><a href="https://www.facebook.com/">FB</a></li>
-            <li class="social-yt"><a href="https://www.youtube.com/">YT</a></li>
+            <li class="social-tw" area-label="Твиттер"><a href="https://twitter.com/"></a></li>               
+            <li class="social-fb" area-label="Фейсбук"><a href="https://www.facebook.com/"></a></li>
+            <li class="social-yt" area-label="Ютуб"><a href="https://www.youtube.com/"></a></li>
         </ul>
         <b>WebSite By</b>
         <a class="logo-html" href="https://htmlacademy.ru/intensive/htmlcss">html
         academy</a>
     </footer>
 </body>
-</html>     
-                        
-                            
-                            
+</html>                             

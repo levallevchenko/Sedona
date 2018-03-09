@@ -47,32 +47,34 @@
 					<label><input type="checkbox" checked>Апартаменты</label> 
 				</li>
 			</ul>
-			<h3>Стоимость в сутки(Р):</h3>
+			
+			<label for="value">Стоимость в сутки(Р):</label>
 			<ul class="selection-list">
 				<li class="selection-item">от 0</li>
 				<li class="selection-item">до 3000</li>
 			</ul>
-			<a class="button">Показать</a>
-			</section>
-			<section class="sortation">
-				<h2>Найдено 3</h2>
-				<h3>Сортировка</h3>
-				<ul class="sortation-list">
-					<li class="sortation-item">
-						<a href="#">По цене</a>
-					</li>
-					<li class="sortation-item">
-						<a href="#">По типу</a>
-					</li>
-					<li class="sortation-item">
-						<a href="#">По рейтингу</a>
-					</li>
-				</ul>
-				<ul class="arrows">
-					<li class="arrow-up"><a href="#"></a></li>
-					<li class="arrow-down"><a href="#"></a></li>
-				</ul>
-			</section>
+				<input type="range" id="value" min="" max="3000" step="500">
+			<a class="button" href="#">Показать</a>
+		</section>
+		<section class="sortation">
+			<h2>Найдено 3</h2>
+			<h3>Сортировка</h3>
+			<ul class="sortation-list">
+				<li class="sortation-item">
+					<a href="#">По цене</a>
+				</li>
+				<li class="sortation-item">
+					<a href="#">По типу</a>
+				</li>
+				<li class="sortation-item">
+					<a href="#">По рейтингу</a>
+				</li>
+			</ul>
+			<ul class="arrows">
+				<li class="arrow-up"><a href="#"></a></li>
+				<li class="arrow-down"><a href="#"></a></li>
+			</ul>
+		</section>
 		<section class="catalog">
 			<h2 class="visually-hidden">Фильтр гостиниц</h2>
 			<ul class="catalog-list">
@@ -154,13 +156,11 @@
 	<footer class="main-footer">
 		<b>#VisitSedona</b>
 		<ul class="social">
-			<li class="social-tw" area-label="Твиттер"><a href="https://twitter.com/"></a></li>               
-			<li class="social-fb" area-label="Фейсбук"><a href="https://www.facebook.com/"></a></li>
-			<li class="social-yt" area-label="Ютуб"><a href="https://www.youtube.com/"></a></li>
+			<li class="social-tw"><a href="https://twitter.com/" aria-label="Твиттер"></a></li> <li class="social-fb"><a href="https://www.facebook.com/" aria-label="Фейсбук"></a></li>
+			<li class="social-yt"><a href="https://www.youtube.com/" aria-label="Ютуб"></a></li>
 		</ul>
 		<b>WebSite By</b>
-		<a class="logo-html" href="https://htmlacademy.ru/intensive/htmlcss">html
-		academy</a>
+		<a class="logo-html" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
 	</footer>
 </body>
-</html>                             
+</html> 

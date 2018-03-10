@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Седона</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
@@ -89,8 +89,22 @@
 			<h2 class="visually-hidden">Карта</h2>
 		</section>
 		<section class="modal modal-search">
-			<h3>Поиск гостиницы в Седоне</h3>
-			<!-- <form></form> -->
+			<button>Поиск гостиницы в Седоне</button>
+			<form class="search">
+				<label for="arrival">Дата заезда<button type="button"><img src="img/calendar.svg"></button></label>
+				<input type="text" name="arrival" id="arrival" value="24 апреля 2017"><br>
+				<label for="departure">Дата выезда<button type="button"><img src="img/calendar.svg"></button></label>
+				<input type="text" name="departure" id="departure" value="24 апреля 2017"><br>
+				<label for="adults">Взрослые:</label>
+				<button type="button"><img src="img/minus.svg"></button>
+				<input type="text" name="adults" id="adults" value="2">
+				<button type="button" class="plus"><img src="img/plus.svg"></button>
+				<label for="children">Дети:</label>
+				<button type="button"><img src="img/minus.svg"></button>
+				<input type="text" name="children" id="children" value="0">
+				<button type="button"><img src="img/plus.svg"></button><br>
+				<a href="catalog.html">Найти</a>
+			</form>
 		</section>
 	</main>
 	<footer class="main-footer">

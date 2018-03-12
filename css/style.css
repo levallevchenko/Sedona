@@ -1,6 +1,119 @@
-.social-tw {
-	background-image: url("twitter.svg"); 
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
+	color: #333333;
+	text-transform: uppercase;
+
+	background-color: #ffffff;
+	background-position: top center;
 }
-.main {
-	background-color: black;
+a {
+	text-decoration: none;
+	color: #333333;
+	background-color: #ffffff;
+}
+.main-navigation {
+	font-weight: 700;
+}
+.main-header-logo {
+
+}
+.site-navigation {
+	list-style: none;
+}
+.site-navigation a {
+	background-color: #ffffff;
+}
+.site-navigation a:hover {
+color: #81b3d2;
+}
+.site-navigation a:focus,
+.site-navigation a:active {
+	color: #efefef;
+}
+.site-navigation-current a {
+	color: #766357;
+}
+.container {
+	background-image: url("img/sedona.png");
+}
+.container b,
+.container h3 {
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 21px;
+}
+.container ul {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.riason-item {
+	line-height: 21px;
+	text-align: center;
+	width: 400px;
+	height: 256px;
+}
+.reasons-list li:first-child,
+.reasons-list li:nth-child(2) {
+	background-color: #81b3d2;
+	color: #ffffff;
+	background-image: url("img/canyon.jpg");
+}
+.pluses {
+	background-color: #eeeeee;
+	color: #333333;
+}
+.pluses-item li:first-child {
+	background: url("img/icon-house.png") no-repeat;
+}
+.interested b {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+}
+.modal-map {
+	background-image: url("img/map.jpg");
+}
+.modal-search button {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 21px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.modal-search > button {
+	background-color: #81b3d2;
+	width: 568px;
+	height: 86px;
+}
+.modal-search > button:active {
+	background-color: #766357;
+	width: 568px;
+	height: 86px;
+	box-shadow: 0 10px 0 20px rgba(1, 1, 1, 0.25);
+}
+
+}
+.search {
+	width: 568px;
+	height: 395px;
+	text-align: center;
+}
+.search input,
+.search button {
+	background-color: #f2f2f2;
+	box-shadow: none;
+}
+.search > button:last-of-type {
+	width: 458px;
+	height: 58px;
+	background-color: #81b3d2;
+	
+
 }

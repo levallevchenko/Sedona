@@ -21,7 +21,7 @@
 	</header>
 	<main class="container">
 		<h1 class="visually-hidden">Гостиницы Седоны</h1>
-		<form action="/echo" method="post">
+		<form action="/echo" method="get">
 			<fieldset>
 				<legend class="visually-hidden">Выбор гостиницы</legend>
 				<h3>Инфроструктура</h3>
@@ -48,14 +48,13 @@
 						<label><input type="checkbox" checked>Апартаменты</label> 
 					</li>
 				</ul>
-				
-				<label for="value">Стоимость в сутки(Р):</label>
-				<ul class="selection-list">
-					<li class="selection-item">от 0</li>
-					<li class="selection-item">до 3000</li>
-				</ul>
+				<h3>Стоимость в сутки(Р):</h3>
+				<p>
+					<label for="from">от</label><input type="text" name="from" id="from" placeholder="0">
+					<label for="up-to">до</label><input type="text" name="up-to" id="up-to" placeholder="3000">
+				</p>
 					<input type="range" id="value" min="" max="3000" step="500">
-				<a class="button" href="#">Показать</a>
+				<button class="button">Показать</a>
 			</fieldset>
 		</form>
 		<section class="sortation">

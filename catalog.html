@@ -8,10 +8,10 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="main-header">
+	<header class="main-header container">
 		<nav class="main-navigation">
 			<a class="main-header-logo" href="index.html">
-			 <img src="img/logo.png" width="138" height="70" alt="Sity of Sedona">
+				<img src="img/logo.png" width="138" height="70" alt="Sity of Sedona">
 			</a>
 			<ul class="site-navigation">
 				<li><a href="info.html">Информация</a></li>
@@ -24,7 +24,7 @@
 	<main class="container">
 		<h1 class="visually-hidden">Гостиницы Седоны</h1>
 		<form action="#" method="get">
-			<fieldset>
+			<fieldset class="selection">
 				<legend class="visually-hidden">Выбор гостиницы</legend>
 				<h3>Инфроструктура</h3>
 				<ul class="selection-list">
@@ -55,16 +55,19 @@
 					<label for="from">от</label><input type="text" name="from" id="from" value="0">
 					<label for="up-to">до</label><input type="text" name="up-to" id="up-to" value="3000">
 				</p>
-				<input type="range" id="value" min="" max="3000" step="500">
-				<button class="submit">Показать</button>
+				<p>
+					<button type="button"></button>
+					<button type="button"></button>
+				</p>
+				<button type="submit" class="transparent">Показать</button>
 			</fieldset>
 		</form>
 		<section class="sortation">
-			<h2>Найдено 3</h2>
-			<h3>Сортировка</h3>
+			<h2>Найдено 3:</h2>
+			<h3>Сортировка:</h3>
 			<ul class="sortation-list">
 				<li class="sortation-item">
-					<a href="#">По цене</a>
+					<a>По цене</a>
 				</li>
 				<li class="sortation-item">
 					<a href="#">По типу</a>
@@ -74,8 +77,8 @@
 				</li>
 			</ul>
 			<ul class="arrows">
-				<li class="arrow-up"><a href="#"></a></li>
-				<li class="arrow-down"><a href="#"></a></li>
+				<li class="arrow-up"><a href="#">По возрастанию</a></li>
+				<li class="arrow-down"><a>По убыванию</a></li>
 			</ul>
 		</section>
 		<section class="catalog">
@@ -95,8 +98,8 @@
 						</a>
 					</p>
 					<p class="catalog-item-reserve">
-						<a class="button" href="#">Подробнее</a>
-						<a class="button" href="#">Забронировать</a>
+						<a class="button blue" href="#">Подробнее</a>
+						<a class="button brown" href="#">Забронировать</a>
 					</p>
 					<ul class="stars">
 						<li class="star"></li>
@@ -120,8 +123,8 @@
 						</a>
 					</p>
 					<p class="catalog-item-reserve">
-						<a class="button" href="#">Подробнее</a>
-						<a class="button" href="#">Забронировать</a>
+						<a class="button blue" href="#">Подробнее</a>
+						<a class="button brown" href="#">Забронировать</a>
 					</p>
 					<ul class="stars">
 						<li class="star"></li>
@@ -144,8 +147,8 @@
 						</a>
 					</p>
 					<p class="catalog-item-reserve">
-						<a class="button" href="#">Подробнее</a>
-						<a class="button" href="#">Забронировать</a>
+						<a class="button blue" href="#">Подробнее</a>
+						<a class="button brown" href="#">Забронировать</a>
 					</p>
 					<ul class="stars">
 						<li class="star"></li>
@@ -159,12 +162,11 @@
 	<footer class="main-footer">
 		<b>#VisitSedona</b>
 		<ul class="social">
-			<li class="social-tw"><a href="https://twitter.com/" aria-label="Твиттер"></a></li>
-			<li class="social-fb"><a href="https://www.facebook.com/" aria-label="Фейсбук"></a></li>
-			<li class="social-yt"><a href="https://www.youtube.com/" aria-label="Ютуб"></a></li>
+			<li class="social-tw"><a href="https://twitter.com/">Твиттер</a></li>
+			<li class="social-fb"><a href="https://www.facebook.com/">Фейсбук</a></li>
+			<li class="social-yt"><a href="https://www.youtube.com/">Ютуб</a></li>
 		</ul>
-		<b>WebSite By</b>
-		<a class="logo-html" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
+		<b>WebSite By<a class="logo-html" href="https://htmlacademy.ru/intensive/htmlcss" alt="логотип Академии">логотип Академии</a></b>
 	</footer>
 </body>
 </html> 

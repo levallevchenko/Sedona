@@ -73,8 +73,12 @@ a {
 .sedona {
 	display: flex;
 	width: 1200px;
+	position: relative;
 	flex-direction: column;
 	align-items: center;
+}
+.lettering {
+	position: absolute;
 }
 .mountains {
 	width: 1200px;
@@ -142,10 +146,7 @@ a {
 	font-size: 30px;
 	line-height: 36px;
 }
-.map {
-	background-image: url("../img/map.jpg");
-}
-.search button {
+button {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 21px;
 	color: #ffffff;
@@ -188,6 +189,12 @@ button.blue:active {
 	color: #88b6d1;
 	box-shadow: 0 10px 0 20px rgba(1, 1, 1, 0.25);
 }
+.map {
+
+}
+ .social {
+ 	list-style: none;
+ }
 
 .social-tw {
 	background-image: url("../img/icon-tw.svg");
@@ -204,13 +211,20 @@ button.blue:active {
 /*Стили для catalog*/
 .selection {
 	background: url("../img/catalog-main.jpg") no-repeat;
+	border: none;
 }
 button.transparent {
 	text-decoration: none;
 	background-color: transparent;
 	color: #ffffff;
+	font-size: 14px;
+	font-weight: 400;
 	border: 2px solid #ffffff;
-
+	padding: 10px 35px;
+}
+button.transparent:hover {
+	background-color: #ffffff;
+	color: #000000;
 }
 .arrow-up a {
 	background: url("../img/arrow-up.svg") no-repeat;

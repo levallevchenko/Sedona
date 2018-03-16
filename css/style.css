@@ -26,9 +26,10 @@ a {
 	font-weight: 700;
 	width: 100%;
 	display: flex;
-	flex-direction:;
-	justify-content: space-between;
-
+	justify-content: space-around;
+}
+.site-navigation.left {
+	order: 1;
 }
 .main-header {
 	min-height: 55px;

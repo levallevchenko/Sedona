@@ -19,21 +19,17 @@
 				<li><a href="map.html">Карта штата</a></li>
 				<li><a href="catalog.html">Гостиницы</a></li>
 			</ul>
-			</div>
 		</nav>
 	</header>
 	<main class="container sedona">
-		<div class="mountains">
-			<img src="img/mountains.jpg">
-			<img src="img/sedona.png" class="lettering">
-			<img src="img/shape.png">
-		</div>
 		<h1 class="visually-hidden">Седона</h1>
-		<div class="foreword">
+		<section class="mountains">
+			<img src="img/sedona.png" class="lettering" alt="Welcome to Sedona" width="458" height="352">
+		</section>
+		<section class="foreword">
 			<b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
 			<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-		</div>
-		<div class="all-reasons"></div>
+		</section>
 		<section class="reasons">
 			<h2 class="visually-hidden">Причины остановиться в Седоне</h2>
 			<ol class="reasons-list">
@@ -43,7 +39,7 @@
 						<span>— №1 —</span>
 						<span>Седона — не аттракцион для туристов, там течет своя жизнь</span>
 					</p>
-					<p class="flags"><img src="img/flags.jpg"></p>
+					<p class="flags"><img src="img/flags.jpg" alt="Изображение гостиницы" width="800" height="401"></p>
 					<h2 class="visually-hidden">Плюсы</h2>
 					<ul class="pluses-list">
 						<li class="pluses-item house">
@@ -66,67 +62,63 @@
 						<span>— №2 —</span>
 						<span>Да, по нему можно пройти! Если конечно вы осмелитесь</span>
 					</p>
-					<p class="canyon"><img src="img/canyon.jpg"></p>
+					<p class="canyon"><img src="img/canyon.jpg" alt="Изображение каньона"width="800" height="401"></p>
 				</li>
-				<div class="finish-list">
-					<li class="reason-item part-2">
-						<h3>Небольшая площадь</h3>
-						<p>
-							<span>— №3 —</span>
-							<span>Все достопримечательности находятся очень близко</span>
-						</p>
-					</li>
-					<li class="reason-item part-2">
-						<h3>Красивая дорога</h3>
-						<p>
-							<span>— №4 —</span>
-							<span>Ехать в Седону из Лас-Вегаса совсем не скучно!</span>
-						</p>
-					</li>
-					<li class="reason-item part-2">
-						<h3>Мало туристов</h3>
-						<p>
-							<span>— №5 —</span>
-							<span>Большинство туристов едет в Гранд Каньон и толпиться там</span>
-						</p>
-					</li>
-				</div>
+				<li class="reason-item part-2">
+					<h3>Небольшая площадь</h3>
+					<p>
+						<span>— №3 —</span>
+						<span>Все достопримечательности находятся очень близко</span>
+					</p>
+				</li>
+				<li class="reason-item part-2">
+					<h3>Красивая дорога</h3>
+					<p>
+						<span>— №4 —</span>
+						<span>Ехать в Седону из Лас-Вегаса совсем не скучно!</span>
+					</p>
+				</li>
+				<li class="reason-item part-2">
+					<h3>Мало туристов</h3>
+					<p>
+						<span>— №5 —</span>
+						<span>Большинство туристов едет в Гранд Каньон и толпиться там</span>
+					</p>
+				</li>
 			</ol>
 		</section>
 		<section class="interested">
 			<h2 class="visually-hidden">Призыв</h2>
 			<b>Заинтересовались?</b>
 			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-			<section class="search">
 				<button type="button" class="brown">Поиск гостиницы в Седоне</button>
-				<form class="search-form" action="#" method="get">
-					<p>
-						<label for="arrival">Дата заезда<button type="button"><img src="img/calendar.svg"></button></label>
-						<input type="text" name="arrival" id="arrival" value="24 апреля 2017">
-					</p>
-					<p>
-						<label for="departure">Дата выезда<button type="button"><img src="img/calendar.svg"></button></label>
-						<input type="text" name="departure" id="departure" value="24 апреля 2017">
-					</p>
-					<p>
-						<label for="adults">Взрослые:</label>
-						<button type="button"><img src="img/minus.jpg"></button>
-						<input type="text" name="adults" id="adults" value="2">
-						<button type="button" class="plus"><img src="img/plus.png"></button>
-					</p>
-					<p>
-						<label for="children">Дети:</label>
-						<button type="button"><img src="img/minus.jpg"></button>
-						<input type="text" name="children" id="children" value="0">
-						<button type="button"><img src="img/plus.png"></button>
-					</p>
-					<button type="submit" class="blue">Найти</button>
-				</form>
-			</section>
+			<form class="search-form" action="#" method="get">
+				<p>
+					<label for="arrival">Дата заезда<button type="button"><img src="img/calendar.svg" alt="Календарь" width="21" height="22"></button></label>
+					<input type="text" name="arrival" id="arrival" value="24 апреля 2017">
+				</p>
+				<p>
+					<label for="departure">Дата выезда<button type="button"><img src="img/calendar.svg" alt="Календарь" width="21" height="22"></button></label>
+					<input type="text" name="departure" id="departure" value="24 апреля 2017">
+				</p>
+				<p>
+					<label for="adults">Взрослые:</label>
+					<button type="button"><img src="img/minus.jpg" alt="Минус" width="12" height="3"></button>
+					<input type="text" name="adults" id="adults" value="2">
+					<button type="button" class="plus"><img src="img/plus.png" alt="Плюс" width="11" height="11"></button>
+				</p>
+				<p>
+					<label for="children">Дети:</label>
+					<button type="button"><img src="img/minus.jpg" alt="Минус" width="12" height="3"></button>
+					<input type="text" name="children" id="children" value="0">
+					<button type="button"><img src="img/plus.png" alt="Плюс" width="11" height="11"></button>
+				</p>
+				<button type="submit" class="blue">Найти</button>
+			</form>
 		</section>
 		<section class="map">
 			<h2 class="visually-hidden">Карта</h2>
-			<img src="img/map.jpg">
+			<img src="img/map.jpg" alt="Карта" width="1718" height="748">
 		</section>
 	</main>
 	<footer class="main-footer">
@@ -137,7 +129,7 @@
 				<li class="social-fb"><a href="https://www.facebook.com/">Фейсбук</a></li>
 				<li class="social-yt"><a href="https://www.youtube.com/">Ютуб</a></li>
 			</ul>
-			<b>WebSite By<a class="logo-html" href="https://htmlacademy.ru/intensive/htmlcss" alt="логотип Академии"><img src="img/html-logo.svg"></a></b>
+			<b>WebSite By <a class="logo-html" href="https://htmlacademy.ru/intensive/htmlcss" alt="HTML-Academy"><img src="img/html-logo.svg" alt="HTML-Academy" width="115" height="41"></a></b>
 		</div>
 	</footer>
 </body>

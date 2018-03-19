@@ -369,6 +369,11 @@ button.transparent:hover {
 	color: #000000;
 }
 
+.stars {
+	display: flex;
+	justify-content: space-between;
+}
+
 .star {
 	color: #81b3d2;
 }

@@ -60,7 +60,6 @@ a {
 	justify-content: space-around;
 	align-items: center;
 	min-width: 18px;
-	
 }
 
 .main-navigation .map {
@@ -97,31 +96,12 @@ a {
 }
 
 .mountains {
-	background-image: url("../img/mountains.jpg");
-}
-
-.lettering {
-	position: absolute;
-}
-
-.mountains {
 	width: 1200px;
-} 
-
-.foreword {
-	background-color: #ffffff;
-}
-
-.all-reasons {
-	display: flex;
+	background: url("../img/mountains.jpg");
 }
 
 .reason-list {
 	display: flex;
-}
-
-.part-2 {
-
 }
 
 .container b,
@@ -167,7 +147,6 @@ a {
 
 .house{
 	background: url("../img/icon-house.svg") no-repeat;
-
 }
 
 .burger {
@@ -245,7 +224,6 @@ button.blue:active {
 .main-footer .container {
 	display: flex;
 	justify-content: space-around;
-
 }
 
  .social {
@@ -262,7 +240,6 @@ button.blue:active {
 }
 
 .social-yt {
-
 	background-image: url("../img/icon-yt.svg");
 }
 
@@ -304,6 +281,7 @@ button.transparent:hover {
 	justify-content: space-around;
 	align-items: center;
 }
+
 .sortation-list {
 	display: flex;
 }

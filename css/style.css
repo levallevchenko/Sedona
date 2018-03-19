@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	margin: 0;
+	margin: 0 40px;
 	padding: 0;
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
@@ -11,7 +11,6 @@ body {
 	line-height: 21px;
 	color: #333333;
 	text-transform: uppercase;
-	background-color: #ffffff;
 }
 
 a {
@@ -36,7 +35,6 @@ a {
 	font-weight: 700;
 	width: 100%;
 	display: flex;
-	justify-content: space-around;
 }
 
 .main-header {
@@ -90,18 +88,35 @@ a {
 .sedona {
 	display: flex;
 	width: 1200px;
-	position: relative;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .mountains {
+	min-height: 512px;
 	width: 1200px;
 	background: url("../img/mountains.jpg");
 }
 
+.foreword {
+	min-height: 216px;
+}
+
 .reason-list {
 	display: flex;
+}
+
+.reason-item {
+	width: 400px;
+	min-height: 256px;
+}
+
+.reason-item.part-1 {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.reason-item.part-2 {
 }
 
 .container b,
@@ -140,7 +155,10 @@ a {
 .pluses-list {
 	background-color: #ffffff;
 	color: #000000;
+	min-height: 351px;
 	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	padding-top: 60px;
 	padding-bottom: 80px;
 }
@@ -222,8 +240,10 @@ button.blue:active {
 }
 
 .main-footer .container {
+	min-height: 120px;
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 }
 
  .social {
@@ -243,6 +263,11 @@ button.blue:active {
 	background-image: url("../img/icon-yt.svg");
 }
 
+.social + b {
+	font-size: 14px;
+	font-weight: 400;
+}
+
 .logo-html {
 	background-image: url("../img/html-logo.svg");
 }
@@ -251,6 +276,8 @@ button.blue:active {
 .selection {
 	background: url("../img/catalog-main.jpg") no-repeat;
 	background-color: #81b3d2;
+	color: #ffffff;
+	min-height: 217px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -258,6 +285,15 @@ button.blue:active {
 
 .selection fieldset {
 	border: none;
+}
+
+.selection legend {
+	font-size: 16px;
+}
+
+.selection-item label {
+	font-size: 14px;
+	font-weight: 400px;
 }
 
 button.transparent {
@@ -276,6 +312,7 @@ button.transparent:hover {
 }
 
 .sortation {
+	min-height: 87px;
 	border-bottom: 1px solid #e5e5e5;
 	display: flex;
 	justify-content: space-around;
@@ -291,6 +328,7 @@ button.transparent:hover {
 }
 
 .catalog-item {
+	min-height: 151px;
 	border-bottom: 1px solid #e5e5e5;
 	display: flex;
 }
@@ -307,11 +345,17 @@ button.transparent:hover {
 	background-color: #81b3d2;
 }
 
+.sortation h3 {
+	font-size: 14px;
+	font-weight: 400;
+}
+
 .sortation-item:first-child a {
 	color: #81b3d2;
 }
 
 .sortation-item a {
+	font-size: 12px;
 	color: #b2b2b2;
 	border-bottom: 1px dotted #81b3d2;
 }
@@ -331,6 +375,10 @@ button.transparent:hover {
 
 .rating {
 	background-color: #f2f2f2;
+}
+
+.catalog-item-reserve .button {
+	padding: 6px 17px;
 }
 
 a.brown {

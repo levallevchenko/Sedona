@@ -10,6 +10,7 @@ body {
 	font-weight: 400;
 	line-height: 21px;
 	color: #333333;
+	background-color: #ffffff;
 	text-transform: uppercase;
 }
 
@@ -31,42 +32,58 @@ a {
 }
 
 .main-container {
-	margin: 0 40px;
-	box-shadow: 0 5px 70px 15px rgba(0, 1, 1, 0.2);
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #ffffff;
+	box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .main-navigation {
 	position: relative;
 	font-weight: 700;
-	width: 1200;
 	display: flex;
-	justify-content: space-around;
 }
 
 .main-header {
-	min-height: 55px;
+	min-height: 56px;
 }
 
 .main-header-logo {
 	position: absolute;
 	left: 50%;
 	margin-left: -69px;
-}
-
-.site-navigation-wrapper {
-	width: 100%;
+	width: 138px;
+	height: 70px;
 }
 
 .site-navigation {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 56px;
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	justify-content: space-between;
 }
 
-.container {
-	width: 1200px;
+.site-navigation li:first-child {
+	margin-left: 73px;
+	margin-right: 148px;
 }
+
+.site-navigation li:last-child {
+	margin-right: 73px;
+	margin-left: 162px;
+}
+
+.site-navigation li:nth-child(2) {
+	margin-right: 388px;
+}
+/*Не уверена на счет селекторов, вроде с макетом совпало, но наверное, нужно было выбирать ссылки, а не li,
+ + слишком уж как-то нагромождено и не универсально*/
+ /*Периодически при перезагрузке страницы ломается порядок*/
 
 .site-navigation a {
 	color: #333333;
@@ -87,40 +104,42 @@ a {
 	color: #766357;
 }
 
-.sedona {
-	display: flex;
-	width: 1200px;
-	flex-direction: column;
-	align-items: flex-start;
-}
-
 .mountains {
-	min-height: 512px;
-	width: 1200px;
+	min-height: 508px;
 	text-align: center;
-	background: url("../img/shape.png") no-repeat 0 455px,
+	background: url("../img/shape.png") no-repeat 0 451px,
 				url("../img/mountains.jpg");
 }
+ /* Картинка с горами, ниже чем на макете.
+ Между shape и соседним блоком при уменьшении в браузере в нескольких положениях появляется щель.
+  Что-то не так с позиционированием? */
 
 .mountains img {
 	margin-top: 76px; 
 }
 
-.foreword {
-	min-height: 216px;
-	padding: 62px 352px;
-	text-align: center;
-	line-height: 26px;
-}
-
-.container b,
-.container h3 {
+.main-container b,
+.main-container h3 {
 	font-weight: 700;
 	font-size: 21px;
 	line-height: 21px;
 }
 
-.container ul {
+.foreword {
+	min-height: 216px;
+	padding: 62px 352px;
+	padding-bottom: 56px;
+	text-align: center;
+	line-height: 26px;
+}
+
+.foreword p {
+	margin: 0;
+	margin-top: 26px;
+	padding: 0;
+}
+
+.main-container ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -137,34 +156,44 @@ a {
 	flex-wrap: wrap;
 }
 
+.reasons-list p {
+	margin: 0;
+}
+
 .reason-item {
-	width: 400px;
+	margin: 0;
+	padding: 0;
 	min-height: 256px;
 	line-height: 21px;
 	text-align: center;
-	padding: 0 0px;
-	padding-top: 46px;
-	padding-bottom: 62px;
+}
+/*И все таки не получается задать нужную высоту, все маргины и паддинги обнулены..*/
+
+.reason-item h3 {
+	margin: 139px;
+	margin-top: 45px;
+	margin-bottom: 20px;
 }
 
 .item-main {
 	margin: 0;
 	background-color: #81b3d2;
 	color: #ffffff;
-	min-height: ;
-	width: 400px;
-	padding: 0 60px;
-	padding-top: 46px;
-	padding-bottom: 62px;
+	width: 33.33333%;
+	min-height: 256px;
+}
+
+.flags {
+	width: 66.6666%
 }
 
 .flags img {
-	width:
+	width: 100%;
+	overflow: hidden;
 }
 
 .number {
 	display: block;
-	margin-bottom: 26px;
 }
 
 .reasons-list .part-1 {
@@ -172,89 +201,120 @@ a {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 }
 
-
-.flags {
+.part-1:nth-child(2) .item-main{
+	order: 1;
 }
 
 .reasons-list .part-2 {
-	width: 33%;
+	width: 33.3333%;
 	background-color: #eeeeee;
 }
 
 .pluses-list {
+	margin: 0;
+	padding: 0;
 	background-color: #ffffff;
 	color: #000000;
-	min-height: 351px;
+	min-height: 330px;
 	display: flex;
 	flex-direction: row;
-	padding-top: 60px;
-	padding-bottom: 80px;
 }
 
 .pluses-item {
 	position: relative;
+	margin: 0;
 	padding: 0 50px;
 	padding-top: 160px;
 	padding-bottom: 85px;
 	width: 33%;
 }
 
-.pluses-item.house::before {
+.pluses-item h3,
+.pluses-item p {
+	margin: 0;
+}
+
+.pluses-item h3 {
+	margin-bottom: 23px;
+}
+
+.pluses-item::before {
 	content: "";
 	position: absolute;
 	width: 75px;
 	height: 72px;
 	top: 60px;
-	left: 142px;
+	right: 50%;
+	transform: translate(50%);
+}
+
+.pluses-item.house::before {
 	background: url("../img/icon-house.svg") no-repeat;
 }
 
+
 .pluses-item.burger::before {
-	content: "";
-	position: absolute;
-	width: 75px;
-	height: 72px;
-	top: 60px;
-	left: 142px;
 	background: url("../img/icon-burger.svg") no-repeat;
 }
 
 .pluses-item.gift::before {
-	content: "";
-	position: absolute;
-	width: 75px;
-	height: 72px;
-	top: 60px;
-	left: 142px;
 	background: url("../img/icon-gift.svg") no-repeat;
+}
+/*Почему у подарка не отрисовывается дно?*/
+
+.interested {
+	position: relative;
 }
 
 .appeal {
 	min-height: 291px;
-	padding-top: 53px;
 	text-align: center;
+	padding-top: 53px;
+}
+
+.appeal p {
+	margin: 25px 382px;
+	margin-bottom: 0;
 }
 
 .search-form {
+	position: absolute;
 	display: flex;
 	flex-wrap: wrap;
 	width: 568px;
 	justify-content: space-around;
+	background-color: #ffffff;
+	left: 50%;
+	transform: translate(-50%);
+	text-align: center;
+}
+
+.search-form p { 
+	margin: 55px;
+	margin-bottom: 0;
+	margin-top: 30px;
+}
+
+.search-form p:first-child {
+	margin-top: 55px;
 }
 
 .search-form input { 
 	border: none;
 	background-color: #f2f2f2;
-	padding: 6px 0;
+	padding: 11px 0;
+}
+
+.search-form label {
+	font-weight: 700;
 }
 
 .search-form input:first-child,
 .search-form input:nth-child(2) {
 	padding-left: 13px;
-	padding-right: 250px;
+	padding-right: 150px;
 }
 
 .search-form input:nth-child(3),
@@ -263,6 +323,22 @@ a {
 	padding-right: 16px;
 }
 
+.search-form img[src*=calendar] {
+	position: absolute;
+	left: 460px;
+	top: 65px;
+}
+
+label[for="departure"] img[src*=calendar] {
+	top: 130px;
+}
+
+input[name="adults"],
+input[name="children"] {
+	width: 40px;
+}
+
+
 .interested b {
 	font-weight: 700;
 	font-size: 30px;
@@ -270,6 +346,7 @@ a {
 }
 
 .interested .brown {
+	border: none;
 	margin-top: 52px;
 	padding: 30px 138px;
 	text-align: center;
@@ -278,6 +355,7 @@ a {
 .interested .blue {
 	margin-top: 54px;
 	padding: 17px 196px;
+	margin-bottom: 55px;
 }
 
 button {
@@ -287,22 +365,17 @@ button {
 	text-transform: uppercase;
 }
 
-.search {
-	width: 568px;
-	text-align: center;
-}
-
-.search input,
-.search button {
+.search-form input,
+.search-form button {
 	background-color: #f2f2f2;
 	border: none;
 }
 
-.search input:hover {
+.search-form input:hover {
 	background-color: #ebebeb;
 }
 
-.search input:active {
+.search-form input:active {
 	background-color: #ffffff;
 }
 
@@ -335,7 +408,7 @@ button.blue:active {
 }
 
 .map {
-
+	overflow: hidden;
 }
 
 .main-footer .container {
@@ -381,27 +454,35 @@ button.blue:active {
 .logo-html {
 	background-image: url("../img/html-logo.svg");
 }
+/*Все равно не появляется лого*/
 
 /*Стили для catalog*/
 .selection {
 	background: url("../img/catalog-main.jpg") no-repeat;
+	background-size: cover;
 	background-color: #81b3d2;
 	color: #ffffff;
 	padding: 32px 73px;
 	min-height: 217px;
 	display: flex;
-	justify-content: space-around;
-	
+	justify-content: space-between;
 }
 
 .selection fieldset {
+	margin: 0;
+	padding: 0;
 	border: none;
+}
+
+.selection .property-type {
+	margin-right: 340px;
 }
 
 .selection legend {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 21px;
+	margin-bottom: 24px;
 
 }
 
@@ -411,11 +492,13 @@ button.blue:active {
 }
 
 .cost-per-day {
+	margin: 0;
+	padding: 0;
 	width: 330px;
 }
 
 .cost-per-day legend {
-	margin-bottom: 9px;
+	margin-bottom: 7px;
 	font-size: 16px;
 	line-height: 21px;
 }
@@ -423,6 +506,7 @@ button.blue:active {
 .price-controls {
 	position: relative;
 	height: 36px;
+	margin: 0;
 	margin-bottom: 20px;
 	border: 2px solid #ffffff;
 	border-radius: 2px;
@@ -481,15 +565,16 @@ button.blue:active {
 
 .range-toggle {
 	position: absolute;
+	padding: 2px;
 	top: -9px;
-	width: 4px;
-    height: 4px;
-	background: #ababab;
+	background-color: #ababab;
 	border: 8px solid #ffffff;
 	border-radius: 50%;
 	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 	cursor: pointer;
 }
+/*Прописала паддинги для range-toggle, 
+по другому не работало*/
 
 .range-toggle-min {
   	left: 0;
@@ -518,14 +603,20 @@ button.transparent:hover {
 }
 
 .sortation {
+	padding: 0 73px;
 	min-height: 87px;
 	border-bottom: 1px solid #e5e5e5;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 }
 
+.sortation h3 {
+	font-size: 18px;
+}
+
 .sortation-list {
+	margin-right: 500px;
 	display: flex;
 }
 
@@ -606,7 +697,6 @@ button.transparent:hover {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-
 }
 
 .hotel-info h3 {

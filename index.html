@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div class="main-container">
-		<header class="main-header container">
+		<header class="main-header">
 			<nav class="main-navigation">
 				<a class="main-header-logo">
 					<img src="img/logo.png" width="138" height="70" alt="Sity of Sedona">
@@ -22,7 +22,7 @@
 				</ul>
 			</nav>
 		</header>
-		<main class="container sedona">
+		<main class="sedona">
 			<h1 class="visually-hidden">Седона</h1>
 			<section class="mountains">
 				<img src="img/sedona.png" class="lettering" alt="Welcome to Sedona" width="458" height="352">
@@ -39,7 +39,7 @@
 							<h3>Настоящий городок</h3>
 							<p>
 								<span class="number">— №1 —</span><br>
-								<span>Седона — не аттракцион для туристов, там течет своя жизнь</span>
+								<span class="explanation">Седона — не аттракцион для туристов, там течет своя жизнь</span>
 							</p>
 						</div>
 						<p class="flags"><img src="img/flags.jpg" alt="Изображение гостиницы" width="800" height="401"></p>
@@ -64,7 +64,7 @@
 							<h3>Там есть мост дьявола</h3>
 							<p>
 								<span class="number">— №2 —</span>
-								<span>Да, по нему можно пройти! Если конечно вы осмелитесь</span>
+								<span class="explanation">Да, по нему можно пройти! Если конечно вы осмелитесь</span>
 							</p>
 						</div>
 						<p class="canyon"><img src="img/canyon.jpg" alt="Изображение каньона"width="800" height="401"></p>
@@ -73,21 +73,21 @@
 						<h3>Небольшая площадь</h3>
 						<p>
 							<span class="number">— №3 —</span>
-							<span>Все достопримечательности находятся очень близко</span>
+							<span class="explanation">Все достопримечательности находятся очень близко</span>
 						</p>
 					</li>
 					<li class="reason-item part-2">
 						<h3>Красивая дорога</h3>
 						<p>
 							<span class="number">— №4 —</span>
-							<span>Ехать в Седону из Лас-Вегаса совсем не скучно!</span>
+							<span class="explanation">Ехать в Седону из Лас-Вегаса совсем не скучно!</span>
 						</p>
 					</li>
 					<li class="reason-item part-2">
 						<h3>Мало туристов</h3>
 						<p>
 							<span class="number">— №5 —</span>
-							<span>Большинство туристов едет в Гранд Каньон и толпиться там</span>
+							<span class="explanation">Большинство туристов едет в Гранд Каньон и толпиться там</span>
 						</p>
 					</li>
 				</ol>
@@ -96,16 +96,16 @@
 				<h2 class="visually-hidden">Призыв</h2>
 				<section class="appeal">
 					<b>Заинтересовались?</b>
-					<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+					<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 					<button type="button" class="brown">Поиск гостиницы в Седоне</button>
 				</section>
 				<form class="search-form" action="#" method="get">
 					<p>
-						<label for="arrival">Дата заезда<button type="button"><img src="img/calendar.svg" alt="Календарь" width="21" height="22"></button></label>
+						<label for="arrival">Дата заезда:<button type="button"><img src="img/calendar.svg" alt="Календарь" width="21" height="22"></button></label>
 						<input type="text" name="arrival" id="arrival" value="24 апреля 2017">
 					</p>
 					<p>
-						<label for="departure">Дата выезда<button type="button"><img src="img/calendar.svg" alt="Календарь" width="21" height="22"></button></label>
+						<label for="departure">Дата выезда:<button type="button"><img src="img/calendar.svg" alt="Календарь" width="21" height="22"></button></label>
 						<input type="text" name="departure" id="departure" value="4 июля 2017">
 					</p>
 					<p>
@@ -136,7 +136,7 @@
 						<li class="social-button">
 							<a href="https://twitter.com/">
 								<span class="visually-hidden">Твиттер</span>
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15"><image overflow="visible" width="17" height="15" xlink:href="t.png"/><path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg>
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15"><path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg>
 							</a>
 						</li>
 						<li class="social-button">
@@ -148,7 +148,7 @@
 						<li class="social-button">
 							<a href="https://www.youtube.com/">
 								<span class="visually-hidden">Ютуб</span>
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16"><image overflow="visible" width="20" height="16" xlink:href="youtube.png"/><path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16"><path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
 							</a>
 						</li>
 					</ul>

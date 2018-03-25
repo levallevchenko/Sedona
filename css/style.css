@@ -10,7 +10,7 @@ body {
 	font-weight: 400;
 	line-height: 21px;
 	color: #333333;
-	background-color: #ffffff;
+	background-color: #f2f2f2;
 	text-transform: uppercase;
 }
 
@@ -38,6 +38,12 @@ a {
 	box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
 }
 
+.main-container ul {
+	margin: 0;
+	padding: 0 6%;
+	list-style: none;
+}
+
 .main-navigation {
 	position: relative;
 	font-weight: 700;
@@ -57,29 +63,30 @@ a {
 }
 
 .site-navigation {
-	margin: 0;
-	padding: 0;
 	width: 100%;
 	min-height: 56px;
-	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
+}
+
+.site-navigation li {
+	margin: 0;
+	width: 23%;
 }
 
 .site-navigation li:first-child {
-	margin-left: 73px;
-	margin-right: 148px;
+
 }
 
+.site-navigation li:nth-child(3),
 .site-navigation li:last-child {
-	margin-right: 73px;
-	margin-left: 162px;
+	text-align: right;
 }
 
 .site-navigation li:nth-child(2) {
-	margin-right: 388px;
+	margin-right: 8%;
 }
 /*Не уверена на счет селекторов, вроде с макетом совпало, но наверное, нужно было выбирать ссылки, а не li,
  + слишком уж как-то нагромождено и не универсально*/
@@ -139,12 +146,6 @@ a {
 	padding: 0;
 }
 
-.main-container ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
 .reasons ol {
 	margin: 0;
 	padding: 0;
@@ -183,13 +184,17 @@ a {
 	min-height: 256px;
 }
 
-.flags {
-	width: 66.6666%
+.images {
+	width: 66.6666%;
+	position: relative;
+	overflow: hidden;
 }
 
-.flags img {
+.images img {
 	width: 100%;
-	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 
 .number {
@@ -244,7 +249,7 @@ a {
 	content: "";
 	position: absolute;
 	width: 75px;
-	height: 72px;
+	height: 76px;
 	top: 60px;
 	right: 50%;
 	transform: translate(50%);
@@ -262,7 +267,6 @@ a {
 .pluses-item.gift::before {
 	background: url("../img/icon-gift.svg") no-repeat;
 }
-/*Почему у подарка не отрисовывается дно?*/
 
 .interested {
 	position: relative;
@@ -452,7 +456,7 @@ button.blue:active {
 }
 
 .logo-html {
-	background-image: url("../img/html-logo.svg");
+	background-image: url("../img/html-logo.svg") no-repeat;
 }
 /*Все равно не появляется лого*/
 
@@ -548,7 +552,7 @@ button.blue:active {
 }
 
 .range-controls {
-  	position: relative;
+	position: relative;
 	margin-bottom: 32px;
 }
 
@@ -577,17 +581,17 @@ button.blue:active {
 по другому не работало*/
 
 .range-toggle-min {
-  	left: 0;
+	left: 0;
 }
 
 .range-toggle-max {
-  	left: 80%;
+	left: 80%;
 }
 
 button.transparent {
 	padding: 6px 35px;
 	display: block;
-    margin: 0 auto;
+	margin: 0 auto;
 	text-decoration: none;
 	background-color: transparent;
 	color: #ffffff;

@@ -114,8 +114,11 @@ a {
 .mountains {
 	min-height: 508px;
 	text-align: center;
-	background: url("../img/shape.png") no-repeat 0 451px,
-				url("../img/mountains.jpg");
+	background-color: #536c83;
+	background-image: url(../img/shape.png),url(../img/mountains.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom,100% 21%;
+	background-size: 100% 57px,cover;
 }
  /* Картинка с горами, ниже чем на макете.
  Между shape и соседним блоком при уменьшении в браузере в нескольких положениях появляется щель.
@@ -194,7 +197,7 @@ a {
 	width: 100%;
 	position: absolute;
 	left: 0;
-	top: 0;
+	bottom: -27%;
 }
 
 .number {

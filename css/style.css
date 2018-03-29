@@ -386,6 +386,7 @@ input[name="children"] {
 label[for="adults"],
 label[for="children"] {
 	margin-right: 41px;
+	margin-top: 9px;
 }
 
 .persons {

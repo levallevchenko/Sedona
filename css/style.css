@@ -31,17 +31,16 @@ a {
 	margin: -1px;
 }
 
+.main-container ul {
+	list-style: none;
+	margin: 0;
+}
+
 .main-container {
 	width: 1200px;
 	margin: 0 auto;
 	background-color: #ffffff;
 	box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
-}
-
-.main-container ul {
-	margin: 0;
-	padding: 0 6%;
-	list-style: none;
 }
 
 .main-navigation {
@@ -63,6 +62,9 @@ a {
 }
 
 .site-navigation {
+	margin: 0;
+	padding: 0 6%;
+	list-style: none;
 	width: 100%;
 	min-height: 56px;
 	display: flex;
@@ -171,16 +173,20 @@ a {
 	line-height: 21px;
 	text-align: center;
 }
+
+.reason-item.part-2 {
+	padding: 45px 60px;
+}
 /*И все таки не получается задать нужную высоту, все маргины и паддинги обнулены..*/
 
 .reason-item h3 {
-	margin: 139px;
-	margin-top: 45px;
-	margin-bottom: 20px;
+	margin: 0;
+	margin-bottom: 20px
 }
 
 .item-main {
 	margin: 0;
+	padding: 45px 60px;
 	background-color: #81b3d2;
 	color: #ffffff;
 	width: 33.33333%;
@@ -202,6 +208,7 @@ a {
 
 .number {
 	display: block;
+	margin-bottom: 24px;
 }
 
 .reasons-list .part-1 {
@@ -211,7 +218,8 @@ a {
 	flex-wrap: wrap;
 }
 
-.part-1:nth-child(2) .item-main{
+.part-1:nth-child(2) .item-main {
+	padding: 45px 49px;
 	order: 1;
 }
 
@@ -236,7 +244,7 @@ a {
 	padding: 0 50px;
 	padding-top: 160px;
 	padding-bottom: 85px;
-	width: 33%;
+	width: 33.3333%;
 }
 
 .pluses-item h3,
@@ -288,10 +296,11 @@ a {
 
 .search-form {
 	position: absolute;
+	padding: 55px;
 	display: flex;
 	flex-wrap: wrap;
 	width: 568px;
-	justify-content: space-around;
+	justify-content: space-between;
 	background-color: #ffffff;
 	left: 50%;
 	transform: translate(-50%);
@@ -299,13 +308,12 @@ a {
 }
 
 .search-form p { 
-	margin: 55px;
 	margin-bottom: 0;
 	margin-top: 30px;
 }
 
 .search-form p:first-child {
-	margin-top: 55px;
+	margin-top: 0;
 }
 
 .search-form input { 
@@ -316,6 +324,13 @@ a {
 
 .search-form label {
 	font-weight: 700;
+}
+
+.search-form input {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .search-form input:first-child,
@@ -330,14 +345,33 @@ a {
 	padding-right: 16px;
 }
 
-.search-form img[src*=calendar] {
-	position: absolute;
-	left: 460px;
-	top: 65px;
+label[for="arrival"] {
+	margin-right: 21px;
 }
 
-label[for="departure"] img[src*=calendar] {
+label[for="departure"] {
+	margin-right: 17px;
+}
+
+label[for="arrival"] button,
+label[for="departure"] button {
+	position: absolute;
+	background-color: rgba(1, 1, 1, 0);
+	top: 63px;
+	right: 64px;
+}
+
+label[for="departure"] button {
 	top: 130px;
+}
+
+img[src*="calendar"] {
+
+}
+
+input[name="arrival"],
+input[name="departure"] {
+	width: 340px;
 }
 
 input[name="adults"],
@@ -345,6 +379,19 @@ input[name="children"] {
 	width: 40px;
 }
 
+label[for="adults"],
+label[for="children"] {
+	margin-right: 41px;
+}
+
+.persons {
+	width: 38px;
+}
+
+.persons img {
+	display: inline-block;
+	vertical-align: middle;
+}
 
 .interested b {
 	font-weight: 700;
@@ -362,7 +409,6 @@ input[name="children"] {
 .interested .blue {
 	margin-top: 54px;
 	padding: 17px 196px;
-	margin-bottom: 55px;
 }
 
 button {
@@ -414,22 +460,37 @@ button.blue:active {
 	box-shadow: 0 10px 0 20px rgba(1, 1, 1, 0.25);
 }
 
+.search-form p:nth-child(3),
+.search-form p:nth-child(4) {
+	display: flex;
+}
+
 .map {
 	overflow: hidden;
 }
 
 .main-footer .container {
+	padding: 0;
 	min-height: 120px;
 	display: flex;
-	justify-content: space-around;
 	align-items: center;
 }
 
-.hashtag {
-	margin-left: 132px;
+.index .container { 
+  	margin-top: -120px;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
-.created-by {
+.hashtag {
+	width: 33.3333%;
+	text-align: center;
+}
+
+.footer-social {
+	width: 33.333%;
+	text-align: center;
 }
 
 .footer-social ul {
@@ -441,7 +502,6 @@ button.blue:active {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	
 }
 
 .social-button {
@@ -453,23 +513,53 @@ button.blue:active {
 	background-color: #81b3d2;
 }
 
+.social-button:hover {
+	background-color: #669ec0;
+}
+
+.social-button:focus:active {
+	background-color: #5496bd;
+}
+
+..social-button:hover path {
+	fill: #88b6d1;
+}
+
+.social-button:focus:active path {
+	fill: #88b6d1;
+}
+/*focus или active*/
 .footer-social + b {
 	font-size: 14px;
 	font-weight: 400;
 }
 
+.created-by {
+	width: 33.3333%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .logo-html {
 	background-image: url("../img/html-logo.svg") no-repeat;
+	margin-top: 9px;
+	margin-left: 8px;
 }
-/*Все равно не появляется лого*/
+
+.logo-html:hover path {
+	fill:#bdbbbc;
+}
 
 /*Стили для catalog*/
 .selection {
-	background: url("../img/catalog-main.jpg") no-repeat;
+	background: url("../img/catalog-main.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 35%;
 	background-size: cover;
 	background-color: #81b3d2;
 	color: #ffffff;
-	padding: 32px 73px;
+	padding: 30px 6% 32px;
 	min-height: 217px;
 	display: flex;
 	justify-content: space-between;
@@ -481,15 +571,56 @@ button.blue:active {
 	border: none;
 }
 
+.selection-list {
+	padding: 0;
+}
+
+.selection-item:not(:last-child) {
+	margin-bottom: 23px;
+}
+
+label.checkbox {
+	position: relative;
+	padding-left: 40px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.checkbox input[type="checkbox"] + .checkbox-indicator {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 27px;
+	height: 23px;
+	background-image: url("../img/checkbox-off.svg");
+	background-repeat: no-repeat;
+}
+
+.checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+	background-image: url("../img/checkbox-on.svg");
+	background-repeat: no-repeat;
+}
+
+.checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.selection .inrastructure {
+	width: 20%;
+}
+
 .selection .property-type {
-	margin-right: 340px;
+	width: 50%;
+    padding-left: 85px;
 }
 
 .selection legend {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 21px;
-	margin-bottom: 24px;
+	margin-bottom: 21px;
 
 }
 
@@ -501,7 +632,7 @@ button.blue:active {
 .cost-per-day {
 	margin: 0;
 	padding: 0;
-	width: 330px;
+	width: 30%;
 }
 
 .cost-per-day legend {
@@ -610,7 +741,7 @@ button.transparent:hover {
 }
 
 .sortation {
-	padding: 0 73px;
+	padding: 0;
 	min-height: 87px;
 	border-bottom: 1px solid #e5e5e5;
 	display: flex;
@@ -631,6 +762,10 @@ button.transparent:hover {
 	margin-left: 33px;
 }
 
+.arrows {
+	display: flex;
+}
+
 .arrow-up a {
 	background: url("../img/arrow-up.svg") no-repeat;
 }
@@ -643,7 +778,16 @@ button.transparent:hover {
 	background-color: #81b3d2;
 }
 
+.sortation {
+	padding: 30px 6%;
+}
+
+.sortation h2 {
+	margin: 0;
+}
+
 .sortation h3 {
+	margin: 0;
 	font-size: 14px;
 	font-weight: 400;
 }
@@ -667,57 +811,43 @@ button.transparent:hover {
 	color: #000000;
 }
 
-.stars {
-	display: flex;
-	justify-content: space-between;
-}
-
-.star {
-	color: #81b3d2;
-	margin-bottom: 47px;
-	margin-right: 7px;
-}
-
-.rating {
-	background-color: #f2f2f2;
-	padding: 4px 13px;
-}
-
 .catalog-list {
 	margin: 0;
 	padding: 0;
 }
 
 .catalog-item {
-	padding: 20px 73px;
+	padding: 30px 6%;
 	border-bottom: 1px solid #e5e5e5;
 	display: flex;
 }
 
-.catalog-item img {
+.catalog-item > p {
+	margin: 0;
 }
 
 .catalog-item .hotel-info {
 	margin-left: 30px;
 	min-height: 95px;
-	width: 258px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	flex: 1 0 auto;
 }
 
 .hotel-info h3 {
-	margin: 10px 0;
+	margin: 0;
+	margin-bottom: 10px;
 }
 
 .hotel-info p {
 	margin: 0;
 }
 
-.catalog-item .grade {
-	margin-left: 522px;
-	width: 111px;
+.hotel-info p:first-of-type {
+	margin-bottom: 17px;
+}
 
+.catalog-item-title {
+	display: inline-block;
+	width: 113px;
 }
 
 .catalog-item-reserve .button {
@@ -753,5 +883,54 @@ a.blue:active {
 	color: #88b6d1;
 	box-shadow: 0 10px 0 20px rgba(1, 1, 1, 0.25);
 }
+
+.catalog-item .grade {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+ul.stars {
+	display: flex;
+	padding: 0;
+	justify-content: flex-end;
+	width: 110px;
+}
+
+li.star {
+	color: #81b3d2;
+	position: relative;
+	padding-left: 24px;
+	width: 20px;
+	height: 20px;
+}
+
+li.star:last-child {
+	padding-left: 0; 
+}
+
+/*.star::before {
+	content: "";
+	background: url("../img/star.svg") no-repeat;
+	width: 20px;
+	height: 20px;
+	fill: #81b3d2;
+*/
+
+.star-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 17px;
+	height: 20px;
+	background-image: url("../img/star.svg");
+	background-repeat: no-repeat;
+}
+
+.rating {
+	background-color: #f2f2f2;
+	padding: 4px 13px;
+} 
 
 

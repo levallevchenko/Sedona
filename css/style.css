@@ -477,10 +477,10 @@ button.blue:active {
 }
 
 .index .container { 
-  	margin-top: -120px;
-    position: relative;
-    z-index: 1;
-    background-color: rgba(255, 255, 255, 0.9);
+	margin-top: -120px;
+	position: relative;
+	z-index: 1;
+	background-color: rgba(255, 255, 255, 0.9);
 }
 
 .hashtag {
@@ -613,7 +613,7 @@ label.checkbox {
 
 .selection .property-type {
 	width: 50%;
-    padding-left: 85px;
+	padding-left: 85px;
 }
 
 .selection legend {
@@ -711,8 +711,10 @@ label.checkbox {
 	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 	cursor: pointer;
 }
-/*Прописала паддинги для range-toggle, 
-по другому не работало*/
+
+.range-toggle:hover {
+	border: 9px solid #ffffff;
+}
 
 .range-toggle-min {
 	left: 0;

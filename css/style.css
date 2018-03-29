@@ -819,6 +819,7 @@ button.transparent:hover {
 
 .sortation-item:first-child a {
 	color: #81b3d2;
+	border: none;
 }
 
 .sortation-item a {
@@ -834,6 +835,7 @@ button.transparent:hover {
 
 .sortation-item a:active {
 	color: #000000;
+	border: none;
 }
 
 .catalog-list {
@@ -860,6 +862,14 @@ button.transparent:hover {
 .hotel-info h3 {
 	margin: 0;
 	margin-bottom: 10px;
+}
+ 
+.hotel-info .hotel-name:hover {
+	color: #81b3d2;
+}
+
+.hotel-info .hotel-name:active {
+	color: #cacaca;
 }
 
 .hotel-info p {

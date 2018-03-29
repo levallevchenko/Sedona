@@ -366,7 +366,11 @@ label[for="departure"] button {
 }
 
 img[src*="calendar"] {
+	cursor: pointer;
+}
 
+img[src*="calendar"]:hover path {
+	fill: #000;
 }
 
 input[name="arrival"],
@@ -771,10 +775,18 @@ button.transparent:hover {
 
 .arrow-up a {
 	background: url("../img/arrow-up.svg") no-repeat;
+	margin-right: 12px;
 }
 
 .arrow-down a {
 	background: url("../img/arrow-down.svg") no-repeat;
+}
+
+.arrow-up a,
+.arrow-down a {
+	display: block;
+	width: 11px;
+	height: 10px;
 }
 
 .arrows a:active {

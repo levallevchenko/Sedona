@@ -478,6 +478,11 @@ button.blue:active {
 	overflow: hidden;
 }
 
+.map-img {
+	position: absolute;
+	top: -1000px;
+}
+
 .main-footer .container {
 	padding: 0;
 	min-height: 120px;

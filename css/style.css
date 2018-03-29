@@ -725,9 +725,10 @@ label.checkbox {
 }
 
 button.transparent {
-	padding: 6px 35px;
+	padding: 9px 34px;
 	display: block;
-	margin: 0 auto;
+	margin-left: 85px;
+	margin-right: 95px;
 	text-decoration: none;
 	background-color: transparent;
 	color: #ffffff;

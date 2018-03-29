@@ -297,7 +297,7 @@ a {
 .search-form {
 	position: absolute;
 	padding: 55px;
-	display: flex;
+	display: none;
 	flex-wrap: wrap;
 	width: 568px;
 	justify-content: space-between;
@@ -305,6 +305,10 @@ a {
 	left: 50%;
 	transform: translate(-50%);
 	text-align: center;
+}
+
+.search-form-show {
+	display: flex;
 }
 
 .search-form p { 
@@ -408,7 +412,7 @@ label[for="children"] {
 	line-height: 36px;
 }
 
-.interested .brown {
+.interested .brown.hotel-search {
 	border: none;
 	margin-top: 52px;
 	padding: 30px 138px;

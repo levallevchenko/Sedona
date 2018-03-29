@@ -97,7 +97,7 @@
 				<section class="appeal">
 					<b>Заинтересовались?</b>
 					<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-					<button type="button" class="brown">Поиск гостиницы в Седоне</button>
+					<button type="button" class="brown hotel-search">Поиск гостиницы в Седоне</button>
 				</section>
 				<form class="search-form" action="#" method="get">
 					<p>
@@ -157,6 +157,19 @@
 				<b class="created-by">WebSite By <a href="https://htmlacademy.ru/intensive/htmlcss" alt="HTML-Academy"><img class="logo-html" src="img/html-logo.svg" alt="HTML-Academy" width="115" height="41"></a></b>
 			</div>
 		</footer>
-	</div>  
+	</div>
+<script>
+  	var button = document.querySelector(".hotel-search");
+ 	var popup = document.querySelector(".search-form");
+  	var close = popup.querySelector(".modal-close");
+	button.addEventListener("click", function (evt) {
+  		 evt.preventDefault();
+  		popup.classList.toggle("search-form-show");
+ 	 });
+  	close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.toggle("search-form-show");
+  });
+</script>  
 </body>
 </html>

@@ -353,6 +353,11 @@ a {
 	margin-top: 30px;
 }
 
+.search-form .date {
+	display: flex;
+	align-items: center;
+}
+
 .search-form p:first-child {
 	margin-top: 0;
 }
@@ -379,30 +384,27 @@ a {
 	padding-left: 13px;
 	padding-right: 43px;
 }
-/*если прописываю width: 346px
-у импутов, все рушится, 
-сейчас ширина неправильная*/
 
 .search-form input:nth-child(3),
 .search-form input:nth-child(4) {
-	padding-left: 16px;
-	padding-right: 16px;
+	padding-left: 14px;
+	padding-right: 10px;
 }
 
 label[for="arrival"] {
-	margin-right: 21px;
+	margin-right: 23px;
 }
 
 label[for="departure"] {
-	margin-right: 17px;
+	margin-right: 20px;
 }
 
 label[for="arrival"] button,
 label[for="departure"] button {
 	position: absolute;
 	background-color: rgba(1, 1, 1, 0);
-	top: 63px;
-	right: 64px;
+	top: 62px;
+	right: 58px;
 }
 
 label[for="departure"] button {
@@ -424,7 +426,6 @@ label[for="departure"] button {
 .calendar:focus:active path {
 	fill: #81b3d2;
 }
-/*Не работает active*/
 
 .persons:hover {
 	fill: #000;
@@ -435,12 +436,12 @@ label[for="departure"] button {
 
 input[name="arrival"],
 input[name="departure"] {
-	width: 340px;
+	width: 346px;
 }
 
 input[name="adults"],
 input[name="children"] {
-	width: 40px;
+	width: 38px;
 }
 
 label[for="adults"],
@@ -451,6 +452,16 @@ label[for="children"] {
 
 label[for="children"] {
 	margin-right: 27px;
+}
+
+.persons:hover line,
+.persons:hover line {
+	stroke: #000;
+}
+
+.persons:active:focus line,
+.persons:active:focus line {
+	stroke: #81b3d2;
 }
 
 .persons {
@@ -529,8 +540,6 @@ button.blue:active {
 	position: absolute;
 	top: -1000px;
 }
-/*у интерактивной карты снизу белая рамка,
-которая создает ненужный отступ, как быть*/
 
 .main-footer .container {
 	padding: 0;
@@ -538,9 +547,6 @@ button.blue:active {
 	display: flex;
 	align-items: center;
 }
-
-/*нужно ли идеальное совпадение с интерактивной 
-картой при загрузке страницы?*/
 
 .index .container { 
 	margin-top: -120px;
@@ -674,6 +680,14 @@ label.checkbox {
   border-color: #663d15;
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
+}
+
+.checkbox input[type="checkbox"]:disabled + .checkbox-indicator {
+	background-image: url("../img/checkbox-off-disabled.svg");
+}
+
+.checkbox input[type="checkbox"]:checked:disabled + .checkbox-indicator {
+	background-image: url("../img/checkbox-on-disabled.svg");
 }
 
 .selection .inrastructure {
@@ -817,16 +831,11 @@ button.transparent:hover {
 	min-height: 87px;
 	border-bottom: 1px solid #e5e5e5;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 }
 
-.sortation h3 {
-	font-size: 18px;
-}
-
-.sortation-list {
-	margin-right: 500px;
+ul.sortation-list {
+	padding: 0;
 	display: flex;
 }
 
@@ -834,44 +843,24 @@ button.transparent:hover {
 	margin-left: 33px;
 }
 
-.arrows {
-	display: flex;
-	align-items: center;
-}
-
-.arrow-up  a {
-	margin-right: 12px;
-	display: inline-block;
-	vertical-align: middle; 
-}
-/*добавила svg в html стрелки */
-
-.arrow-down a {
-}
-
-.arrow-up a,
-.arrow-down a {
-	display: block;
-}
-
-.arrows a:active path {
-	background-color: #81b3d2;
-}
-
-
-
 .sortation {
 	padding: 30px 6%;
 }
 
 .sortation h2 {
 	margin: 0;
+	margin-right: 50px;
 }
 
 .sortation h3 {
 	margin: 0;
-	font-size: 14px;
+	margin-right: 39px;
+	font-size: 12px;
 	font-weight: 400;
+}
+
+.sortation-item:first-child {
+	margin-left: 0;
 }
 
 .sortation-item:first-child a {
@@ -893,6 +882,31 @@ button.transparent:hover {
 .sortation-item a:active {
 	color: #000000;
 	border: none;
+}
+
+
+ul.arrows {
+	display: flex;
+	margin-left: auto;
+	align-items: center;
+}
+
+.arrow-up  a {
+	margin-right: 12px;
+	display: inline-block;
+	vertical-align: middle; 
+}
+
+.arrow-down a {
+}
+
+.arrow-up a,
+.arrow-down a {
+	display: block;
+}
+
+.arrows a:active path {
+	background-color: #81b3d2;
 }
 
 .catalog-list {

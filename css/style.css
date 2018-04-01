@@ -549,6 +549,7 @@ button.blue:active {
 .map {
 	overflow: hidden;
 	line-height: 0;
+	background-color: #ccdda9;
 }
 
 .map-img {
@@ -988,6 +989,7 @@ ul.arrows {
 .hotel-img a {
 	display: block;
 	height: 0;
+	background-color: #81d3b2;
 }
 
 .catalog-item .hotel-info {

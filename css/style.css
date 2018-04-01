@@ -110,6 +110,10 @@ a {
 	color: #766357;
 }
 
+.site-navigation-current a: {
+	color: #766357;
+}
+
 .mountains {
 	min-height: 508px;
 	text-align: center;
@@ -883,22 +887,25 @@ ul.arrows {
 	align-items: center;
 }
 
-.arrow-up  a {
+.arrow-up {
 	margin-right: 12px;
 	display: inline-block;
 	vertical-align: middle; 
 }
 
-.arrow-down a {
+.arrow-up:hover polygon,
+.arrow-down:hover path {
+	fill: #000;
 }
 
-.arrow-up a,
-.arrow-down a {
+.arrow-up:active polygon,
+.arrow-down:active path {
+	fill: #81d3b2;
+}
+
+.arrow-up,
+.arrow-down {
 	display: block;
-}
-
-.arrows a:active path {
-	background-color: #81b3d2;
 }
 
 .catalog-list {
@@ -916,9 +923,14 @@ ul.arrows {
 	margin: 0;
 }
 
+.hotel-img a {
+	display: block;
+	height: 0;
+}
+
 .catalog-item .hotel-info {
 	margin-left: 30px;
-	min-height: 95px;
+	min-height: 90px;
 	flex: 1 0 auto;
 }
 
@@ -940,7 +952,7 @@ ul.arrows {
 }
 
 .hotel-info p:first-of-type {
-	margin-bottom: 17px;
+	margin-bottom: 13px;
 }
 
 .catalog-item-title {

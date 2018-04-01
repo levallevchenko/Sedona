@@ -627,7 +627,7 @@ button.blue:active {
 	background-color: #5496bd;
 }
 
-..social-button:hover path {
+.social-button:hover path {
 	fill: #88b6d1;
 }
 

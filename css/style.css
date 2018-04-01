@@ -525,6 +525,7 @@ button.blue:active {
 
 .map {
 	overflow: hidden;
+	line-height: 0;
 }
 
 .map-img {
@@ -605,8 +606,8 @@ button.blue:active {
 }
 
 .logo-html {
-	margin-top: 9px;
-	margin-left: 8px;
+	margin-top: 7px;
+	margin-left: 9px;
 }
 
 .logo-html:hover path {

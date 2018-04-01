@@ -360,27 +360,13 @@ a {
 	animation-duration: 1.5s;
 }
 
-@keyframes roll {
-	0% {transform: translateY(-400px);}
-	10% {transform: translateY(-360px);}
-	20% {transform: translateY(-320px);}
-	30% {transform: translateY(-280px);}
-	40% {transform: translateY(-240px);}
-	50% {transform: translateY(-200px);}
-	60% {transform: translateY(-160px);}
-	70% {transform: translateY(-120px);}
-	80% {transform: translateY(-80px);}
-	90% {transform: translateY(-40px);}
-	100% {transform: translateY(0);}
-}
-
-
 .search-form p { 
 	margin-bottom: 0;
 	margin-top: 30px;
 }
 
 .search-form .date {
+	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -422,24 +408,19 @@ a {
 	padding-right: 10px;
 }
 
-label[for="arrival"] {
-	margin-right: 23px;
-}
-
+label[for="arrival"],
 label[for="departure"] {
-	margin-right: 20px;
+	width: 112px;
+	text-align: left;
+
 }
 
 label[for="arrival"] button,
 label[for="departure"] button {
 	position: absolute;
 	background-color: rgba(1, 1, 1, 0);
-	top: 62px;
-	right: 58px;
-}
-
-label[for="departure"] button {
-	top: 130px;
+	top: 6px;
+	right: 3px;
 }
 
 .calendar {
@@ -494,6 +475,7 @@ label[for="children"] {
 
 .persons {
 	width: 38px;
+	cursor: pointer;
 }
 
 .persons img {
@@ -511,6 +493,7 @@ button {
 	font-size: 21px;
 	color: #ffffff;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 
 .search-form input,
@@ -671,7 +654,7 @@ button.blue:active {
 
 .logo-html {
 	margin-top: 7px;
-	margin-left: 9px;
+	margin-left: 8px;
 }
 
 .logo-html:hover path {
@@ -690,7 +673,7 @@ button.blue:active {
 	background-size: cover;
 	background-color: #81b3d2;
 	color: #ffffff;
-	padding: 30px 6% 32px;
+	padding: 27px 6% 32px;
 	min-height: 217px;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -723,7 +706,7 @@ label.checkbox {
 
 .checkbox input[type="checkbox"] + .checkbox-indicator {
 	position: absolute;
-	top: 0;
+	top: -1px;
 	left: 0;
 	width: 27px;
 	height: 23px;
@@ -763,13 +746,13 @@ label.checkbox {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 21px;
-	margin-bottom: 21px;
+	margin-bottom: 24px;
 
 }
 
 .selection-item label {
 	font-size: 14px;
-	font-weight: 400px;
+	font-weight: 400;
 }
 
 .cost-per-day {
@@ -779,13 +762,14 @@ label.checkbox {
 }
 
 .cost-per-day legend {
-	margin-bottom: 7px;
+	margin-bottom: 10px;
 	font-size: 16px;
 	line-height: 21px;
 }
 
 .price-controls {
 	position: relative;
+	display: flex;
 	height: 36px;
 	margin: 0;
 	margin-bottom: 20px;
@@ -797,15 +781,19 @@ label.checkbox {
 .price-controls label {
 	display: inline-block;
 	font-size: 14px;
-	line-height: 38px;
-	vertical-align: center;
+	line-height: 33px;
+	vertical-align: middle;
 	cursor: pointer;
 }
 
-.price-controls .min-price,
+.price-controls .min-price {
+	width: 87px;
+	padding-left: 66px;
+}
+
 .price-controls .max-price {
-	width: 90px;
-	padding-left: 65px;
+	width: 97px;
+	padding-left: 75px;
 }
 
 .price-controls input {
@@ -832,7 +820,7 @@ label.checkbox {
 
 .range-controls {
 	position: relative;
-	margin-bottom: 32px;
+	margin-bottom: 31px;
 }
 
 .range-controls .scale {
@@ -871,7 +859,7 @@ label.checkbox {
 }
 
 button.transparent {
-	padding: 9px 34px;
+	padding: 8px 34px;
 	display: block;
 	margin-left: 85px;
 	margin-right: 95px;
@@ -890,8 +878,8 @@ button.transparent:hover {
 }
 
 .sortation {
-	padding: 0;
-	min-height: 87px;
+	padding: 32px 6% 28px;
+	min-height: 86px;
 	border-bottom: 1px solid #e5e5e5;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -910,10 +898,6 @@ ul.sortation-list {
 
 .sortation-item {
 	margin-left: 33px;
-}
-
-.sortation {
-	padding: 30px 6%;
 }
 
 .sortation h2 {
@@ -962,6 +946,7 @@ ul.arrows {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+	margin-right: 1px;
 }
 
 .arrow-up {
@@ -970,13 +955,11 @@ ul.arrows {
 	vertical-align: middle; 
 }
 
-.arrow-up:hover polygon,
-.arrow-down:hover path {
+.arrow-up:hover polygon {
 	fill: #000;
 }
 
-.arrow-up:active polygon,
-.arrow-down:active path {
+.arrow-up:active polygon {
 	fill: #81d3b2;
 }
 
@@ -1016,8 +999,8 @@ ul.arrows {
 }
 
 .hotel-info h3 {
-	margin: 0;
-	margin-bottom: 8px;
+	margin: -2px 0 0;
+	margin-bottom: 10px;
 }
  
 .hotel-info .hotel-name:hover {
@@ -1042,7 +1025,7 @@ ul.arrows {
 }
 
 .catalog-item-reserve .button {
-	padding: 6px 17px;
+	padding: 5px 17px;
 }
 
 a.brown {
@@ -1092,6 +1075,7 @@ ul.stars {
 	display: -ms-flexbox;
 	display: flex;
 	padding: 0;
+	margin: -2px 0 0;
 	-webkit-box-pack: end;
 	-ms-flex-pack: end;
 	justify-content: flex-end;
@@ -1101,7 +1085,7 @@ ul.stars {
 li.star {
 	color: #81b3d2;
 	position: relative;
-	padding-left: 24px;
+	padding-left: 23px;
 	width: 20px;
 	height: 20px;
 }

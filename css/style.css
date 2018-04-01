@@ -412,7 +412,6 @@ label[for="arrival"],
 label[for="departure"] {
 	width: 112px;
 	text-align: left;
-
 }
 
 label[for="arrival"] button,

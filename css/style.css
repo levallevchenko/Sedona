@@ -77,8 +77,6 @@ a {
 	margin: 0;
 	width: 23%;
 }
-/*в ТЗ написано по 20%, 
-но так не выравнивается*/
 
 .site-navigation li:first-child {
 
@@ -92,9 +90,6 @@ a {
 .site-navigation li:nth-child(2) {
 	margin-right: 8%;
 }
-/*Не уверена на счет селекторов, вроде с макетом совпало, но наверное, нужно было выбирать ссылки, а не li,
- + слишком уж как-то нагромождено и не универсально*/
- /*Периодически при перезагрузке страницы ломается порядок*/
 
 .site-navigation a {
 	color: #333333;
@@ -124,9 +119,6 @@ a {
 	background-position: bottom,100% 21%;
 	background-size: 100% 57px,cover;
 }
- /* Картинка с горами, ниже чем на макете.
- Между shape и соседним блоком при уменьшении в браузере в нескольких положениях появляется щель.
-  Что-то не так с позиционированием? */
 
 .mountains img {
 	margin-top: 76px; 
@@ -306,8 +298,8 @@ a {
 
 .interested .brown.hotel-search {
 	border: none;
-	margin-top: 47px;
-	padding: 30px 138px;
+	margin-top: 45px;
+	padding: 31px 138px;
 	text-align: center;
 }
 
@@ -321,10 +313,11 @@ a {
 	flex-wrap: wrap;
 	width: 568px;
 	justify-content: space-between;
-	background-color: #ffffff;
 	left: 50%;
 	transform: translate(-50%);
 	text-align: center;
+	background-color: #ffffff;
+	box-shadow: 0 0 15px 2px rgba(0, 1, 1, 0.15)
 }
 
 .search-form-show {
@@ -430,9 +423,6 @@ label[for="departure"] button {
 .persons:hover {
 	fill: #000;
 }
-/* +- у меня png и jpg, переделать в svg
-или вставить бэкграундом для состояний*/
-
 
 input[name="arrival"],
 input[name="departure"] {
@@ -491,12 +481,15 @@ button {
 	border: none;
 }
 
-.search-form input:hover {
+input[name="arrival"]:hover
+input[name="departure"]:hover {
 	background-color: #ebebeb;
 }
 
-.search-form input:active {
-	background-color: #ffffff;
+input[name="arrival"]:focus
+input[name="departure"]:focus {
+	border: 1px solid #e5e5e5;
+	background-color: #ffffff; 
 }
 
 button.brown {
@@ -510,7 +503,6 @@ button.brown:hover {
 button.brown:active {
 	background-color: #503e33;
 	color: #857871;
-	box-shadow: 0 10px 0 20px rgba(1, 1, 1, 0.25);
 }
 
 button.blue {
@@ -524,7 +516,6 @@ button.blue:hover {
 button.blue:active {
 	background-color: #5496bd;
 	color: #88b6d1;
-	box-shadow: 0 10px 0 20px rgba(1, 1, 1, 0.25);
 }
 
 .search-form p:nth-child(3),
@@ -600,7 +591,7 @@ button.blue:active {
 .social-button:focus:active path {
 	fill: #88b6d1;
 }
-/*focus или active*/
+
 .footer-social + b {
 	font-size: 14px;
 	font-weight: 400;
@@ -972,7 +963,6 @@ a.brown:hover {
 a.brown:active {
 	background-color: #503e33;
 	color: #857871;
-	box-shadow: 0 10px 0 20px rgba(1, 1, 1, 0.25);
 }
 
 a.blue {

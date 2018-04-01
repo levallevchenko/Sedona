@@ -481,12 +481,12 @@ button {
 	border: none;
 }
 
-input[name="arrival"]:hover
+input[name="arrival"]:hover,
 input[name="departure"]:hover {
 	background-color: #ebebeb;
 }
 
-input[name="arrival"]:focus
+input[name="arrival"]:focus,
 input[name="departure"]:focus {
 	border: 1px solid #e5e5e5;
 	background-color: #ffffff; 

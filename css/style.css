@@ -117,10 +117,7 @@ a {
 	color: #efefef;
 }
 
-.site-navigation-current a {
-	color: #766357;
-}
-
+.site-navigation-current a,
 .site-navigation-current a:hover {
 	color: #766357;
 }
@@ -457,7 +454,7 @@ label[for="departure"] button {
 	fill: #000;
 }
 
-.calendar:focus:active path {
+.calendar:active path {
 	fill: #81b3d2;
 }
 
@@ -490,8 +487,8 @@ label[for="children"] {
 	stroke: #000;
 }
 
-.persons:active:focus line,
-.persons:active:focus line {
+.persons:active line,
+.persons:active line {
 	stroke: #81b3d2;
 }
 

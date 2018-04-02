@@ -379,11 +379,15 @@ a {
 	align-items: center;
 }
 
-.search-form p:first-child {
+.search-form .date:first-child {
 	margin-top: 0;
 }
 
 .search-form input { 
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
 	border: none;
 	background-color: #f2f2f2;
 	padding: 11px 0;
@@ -393,41 +397,28 @@ a {
 	font-weight: 700;
 }
 
-.search-form input {
-	font-family: "PT Sans", Arial, sans-serif;
-	font-size: 14px;
-	font-weight: 700;
-	text-transform: uppercase;
-}
-
-.search-form input:first-child,
-.search-form input:nth-child(2) {
+.date input {
 	padding-left: 13px;
 	padding-right: 43px;
+	width: 346px;
 }
 
-.search-form input:nth-child(3),
-.search-form input:nth-child(4) {
+.persons input{
 	padding-left: 14px;
 	padding-right: 10px;
 }
 
-label[for="arrival"],
-label[for="departure"] {
+.date label {
 	width: 112px;
 	text-align: left;
 }
 
-.date button,
-.date button {
+.date .calendar {
  	position: absolute;
+ 	cursor: pointer;
 	background-color: rgba(1, 1, 1, 0);
 	top: 6px;
 	right: 3px;
-}
-
-.calendar {
-	cursor: pointer;
 }
 
 .calendar path {
@@ -442,48 +433,30 @@ label[for="departure"] {
 	fill: #81b3d2;
 }
 
-.persons:hover {
-	fill: #000;
-}
-
-input[name="arrival"],
-input[name="departure"] {
-	width: 346px;
-}
-
-input[name="adults"],
-input[name="children"] {
+.persons input {
 	width: 38px;
 }
 
-label[for="adults"],
-label[for="children"] {
+.persons label {
 	margin-right: 41px;
 	margin-top: 9px;
 }
 
-label[for="children"] {
+.persons label[for="children"] {
 	margin-right: 27px;
 }
 
-.persons:hover line,
-.persons:hover line {
-	stroke: #000;
-}
-
-.persons:active line,
-.persons:active line {
-	stroke: #81b3d2;
-}
-
-.persons {
+.prs-change {
 	width: 38px;
 	cursor: pointer;
 }
 
-.persons img {
-	display: inline-block;
-	vertical-align: middle;
+.prs-change:hover line {
+	stroke: #000;
+}
+
+.prs-change:active line {
+	stroke: #81b3d2;
 }
 
 .interested .blue {
@@ -491,7 +464,8 @@ label[for="children"] {
 	padding: 17px 196px;
 }
 
-button {
+.appeal .brown,
+.search-form .blue {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 21px;
 	color: #ffffff;
@@ -505,39 +479,37 @@ button {
 	border: none;
 }
 
-input[name="arrival"]:hover,
-input[name="departure"]:hover {
+.date input:hover {
 	background-color: #ebebeb;
 }
 
-input[name="arrival"]:focus,
-input[name="departure"]:focus {
+.date input:focus {
 	border: 1px solid #e5e5e5;
 	background-color: #ffffff; 
 }
 
-button.brown {
+.brown {
 	background-color: #766357;
 }
 
-button.brown:hover {
+.brown:hover {
 	background-color: #604e43;
 }
 
-button.brown:active {
+.brown:active {
 	background-color: #503e33;
 	color: #857871;
 }
 
-button.blue {
+.search-form .blue {
 	background-color: #81b3d2;
 }
 
-button.blue:hover {
+.search-form .blue:hover {
 	background-color: #669ec0;
 }
 
-button.blue:active {
+.search-form .blue:active {
 	background-color: #5496bd;
 	color: #88b6d1;
 }
@@ -862,7 +834,12 @@ label.checkbox {
 	left: 80%;
 }
 
-button.transparent {
+.transparent {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 21px;
+	color: #ffffff;
+	text-transform: uppercase;
+	cursor: pointer;
 	padding: 8px 34px;
 	display: block;
 	margin-left: 85px;
@@ -876,7 +853,7 @@ button.transparent {
 	border-radius: 2px;
 }
 
-button.transparent:hover {
+.transparent:hover {
 	background-color: #ffffff;
 	color: #000000;
 }
@@ -933,7 +910,6 @@ ul.sortation-list {
 
 .sortation-item a:hover {
 	color: #81b3d2;
-	border-bottom: 1px dotted #81b3d2;
 }
 
 .sortation-item a:active {

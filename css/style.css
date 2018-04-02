@@ -514,8 +514,7 @@ a {
 	color: #88b6d1;
 }
 
-.search-form p:nth-child(3),
-.search-form p:nth-child(4) {
+.persons {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;

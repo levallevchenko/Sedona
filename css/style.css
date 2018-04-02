@@ -1002,6 +1002,7 @@ ul.arrows {
 
 .catalog-item-title {
 	display: inline-block;
+	vertical-align: inherit;
 	width: 113px;
 }
 

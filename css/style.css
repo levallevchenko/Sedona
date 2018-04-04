@@ -334,9 +334,6 @@ a {
 .js .search-form {
 	position: absolute;
 	padding: 55px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
 	display: none;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
@@ -401,6 +398,7 @@ a {
 	padding-left: 13px;
 	padding-right: 43px;
 	width: 346px;
+	border: 1px solid #fff;
 }
 
 .persons input{
@@ -473,7 +471,7 @@ a {
 	cursor: pointer;
 }
 
-.search-form input,
+.persons input,
 .search-form button {
 	background-color: #f2f2f2;
 	border: none;
@@ -1089,4 +1087,3 @@ li.star:last-child {
 	background-color: #f2f2f2;
 	padding: 4px 13px;
 } 
-

@@ -335,7 +335,6 @@ a {
 	position: absolute;
 	padding: 55px;
 	display: none;
-	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	width: 568px;
@@ -536,7 +535,6 @@ a {
 	position: absolute;
 	top: 0;
 	margin: 0;
-	min-height: 592px;
 }
 
 .main-footer .container {

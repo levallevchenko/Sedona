@@ -333,6 +333,7 @@ a {
 
 .js .search-form {
 	position: absolute;
+	z-index: 2;
 	padding: 55px;
 	display: none;
 	-ms-flex-wrap: wrap;
